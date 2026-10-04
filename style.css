@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #2b3037;
+  color: #e55f45;
+}
+.btn:active {
+  background-color: #525861;
+}
+.btn {
+  font-size: 30px;
+  padding: 5px;
+}
+button {
+  border: 2px solid #e55f45;
+  border-radius: 10px;
+  margin: 20px;
+}
+.container {
+  background-color: white;
+  display: flex;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.settings {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
