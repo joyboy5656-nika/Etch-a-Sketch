@@ -3,18 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etch a Sketch</title>
+    <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Etch a Sketch</h1>
       <div class="settings">
-        <button class="reset"><h4 class="btn">Reset</h4></button>
-        <button class="gridSize"><h4 class="btn">Grid Size</h4></button>
+        <div class="size-wrap">
+          <label for="grid-size">Grid Size</label>
+          <input
+            id="grid-size"
+            name="grid-size"
+            type="number"
+            min="1"
+            max="100"
+            step="1"
+            value="16"
+            aria-label="Grid Size"
+          />
+        </div>
+        <button id="resize-btn" type="button">Grid Size</button>
+        <button id="clear-btn" class="reset" type="button">Reset</button>
       </div>
     </header>
-    <div class="container"></div>
+    <div id="container" aria-label="Drawing grid" role="grid"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
